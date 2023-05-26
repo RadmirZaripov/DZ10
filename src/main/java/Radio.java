@@ -10,19 +10,22 @@ public class Radio {
         }
         currentStation = 0;
     }
-        public void prev() {
-            if (currentStation != 0) {
-                currentStation--;
-            } else {
-                currentStation = 9;
-            }
+
+    public void prev() {
+        if (currentStation != 0) {
+            currentStation--;
+        } else {
+            currentStation = 9;
         }
+    }
+
     public void increaseVolume() {
         if (currentVolume < 100) {
             currentVolume = currentVolume + 1;
         }
 
     }
+
     public void decreaseVolume() {
         if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
